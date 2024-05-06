@@ -18,6 +18,7 @@ if upload_image is not None:
     remove_button = st.button(label="Quitar fondo")
 
     if remove_button:
+        st.success("Aguarde un momento, este proceso puede tardar un par de segundos")
         processed_image = tools.process_image(upload_image)
         
         st.image(processed_image, caption="Fondo eliminado", use_column_width=True)
