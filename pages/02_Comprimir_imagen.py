@@ -24,7 +24,7 @@ if upload_image is not None:
     # Debo mejorar logica de unidades de tamaño
     st.success(f"Imagen comprimida. Se redujo de {initial_size} a {final_size}")
 
-    compressed_image.save("images/compressed_image.png")
+    compressed_image.save("download_images/compressed_image.png")
 
     with open("images/compressed_image.png", "rb") as file:
         image_data = file.read()

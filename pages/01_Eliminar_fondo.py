@@ -22,7 +22,7 @@ if upload_image is not None:
         
         st.image(processed_image, caption="Fondo eliminado", use_column_width=True)
 
-        processed_image.save("images/processed_image.png")
+        processed_image.save("download_images/processed_image.png")
 
         with open("images/processed_image.png", "rb") as file:
             image_data = file.read()
