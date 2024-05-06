@@ -24,6 +24,6 @@ if upload_image is not None:
 
         processed_image.save("download_images/processed_image.png")
 
-        with open("images/processed_image.png", "rb") as file:
+        with open("download_images/processed_image.png", "rb") as file:
             image_data = file.read()
         st.download_button("Descargar imagen procesada", data=image_data, file_name="processed_image.png")

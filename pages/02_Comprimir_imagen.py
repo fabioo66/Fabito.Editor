@@ -26,6 +26,6 @@ if upload_image is not None:
 
     compressed_image.save("download_images/compressed_image.png")
 
-    with open("images/compressed_image.png", "rb") as file:
+    with open("download_images/compressed_image.png", "rb") as file:
         image_data = file.read()
     st.download_button("Descargar imagen comprimida", data=image_data, file_name="compressed_image.jpg")
